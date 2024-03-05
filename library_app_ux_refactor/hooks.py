@@ -1,9 +1,9 @@
 app_name = "library_app_ux_refactor"
 app_title = "Library App UX Refactor"
 app_publisher = "Rucha Mahabal"
-app_description = "A demo app showcasing bad design patterns annd refactoring UUX"
+app_description = "A demo Frappe app showcasing bad design patterns refactored to improve the UX"
 app_email = "ruchamahabal2@gmail.com"
-app_license = "mit"
+app_license = "MIT"
 # required_apps = []
 
 # Includes in <head>
@@ -226,4 +226,3 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-
