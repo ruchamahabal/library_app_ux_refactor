@@ -8,9 +8,10 @@
   "book",
   "member",
   "date",
-  "due_date",
   "type",
-  "remarks"
+  "dont_send_reminder_if_due_date_is_exceeded",
+  "remarks",
+  "due_date"
  ],
  "fields": [
   {
@@ -36,9 +37,11 @@
    "label": "Date"
   },
   {
+   "depends_on": "eval:doc.type===\"Issue\"",
    "fieldname": "due_date",
    "fieldtype": "Date",
-   "label": "Due date"
+   "label": "Due date",
+   "mandatory_depends_on": "eval:doc.type===\"Issue\""
   },
   {
    "fieldname": "type",
@@ -52,11 +55,17 @@
    "fieldname": "remarks",
    "fieldtype": "Long Text",
    "label": "Remarks"
+  },
+  {
+   "default": "0",
+   "fieldname": "dont_send_reminder_if_due_date_is_exceeded",
+   "fieldtype": "Check",
+   "label": "Dont Send Reminder IF Due Date Is Exceeded"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-06 01:31:13.745796",
+ "modified": "2024-03-06 01:52:42.232576",
  "modified_by": "Administrator",
  "module": "Library",
  "name": "Library Transaction",
