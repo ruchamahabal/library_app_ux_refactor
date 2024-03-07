@@ -6,22 +6,20 @@
  "engine": "InnoDB",
  "field_order": [
   "title",
-  "image",
   "author",
+  "cover_image",
+  "column_break_hyen",
   "publisher",
   "isbn",
+  "section_break_gcpq",
   "description"
  ],
  "fields": [
   {
    "fieldname": "title",
    "fieldtype": "Data",
-   "label": "Title"
-  },
-  {
-   "fieldname": "image",
-   "fieldtype": "Attach Image",
-   "label": "Image"
+   "label": "Title",
+   "reqd": 1
   },
   {
    "fieldname": "author",
@@ -32,8 +30,7 @@
    "fieldname": "publisher",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Publisher",
-   "reqd": 1
+   "label": "Publisher"
   },
   {
    "fieldname": "description",
@@ -44,13 +41,26 @@
    "fieldname": "isbn",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "ISBN",
-   "reqd": 1
+   "label": "ISBN"
+  },
+  {
+   "fieldname": "column_break_hyen",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_gcpq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cover_image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Cover Image"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-06 12:27:14.316124",
+ "modified": "2024-03-08 02:26:50.506981",
  "modified_by": "Administrator",
  "module": "Library",
  "name": "Book",
