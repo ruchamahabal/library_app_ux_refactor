@@ -13,7 +13,7 @@
   {
    "fieldname": "member_name",
    "fieldtype": "Data",
-   "label": "Member name"
+   "label": "Member Name"
   },
   {
    "fieldname": "email",
@@ -28,7 +28,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-06 01:15:20.694028",
+ "modified": "2024-03-07 22:04:25.066943",
  "modified_by": "Administrator",
  "module": "Library",
  "name": "Library Member",
