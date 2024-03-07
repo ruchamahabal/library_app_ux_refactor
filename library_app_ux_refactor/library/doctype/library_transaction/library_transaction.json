@@ -7,11 +7,18 @@
  "field_order": [
   "book",
   "member",
-  "date",
-  "type",
+  "member_email",
+  "transaction_date",
+  "transaction_type",
   "dont_send_reminder_if_due_date_is_exceeded",
   "remarks",
-  "due_date"
+  "due_date",
+  "return_date",
+  "section_break_eadm",
+  "reissued",
+  "reissued_from",
+  "amended_from",
+  "column_break_rlnq"
  ],
  "fields": [
   {
@@ -31,25 +38,10 @@
    "reqd": 1
   },
   {
-   "fieldname": "date",
-   "fieldtype": "Date",
-   "in_list_view": 1,
-   "label": "Date"
-  },
-  {
-   "depends_on": "eval:doc.type===\"Issue\"",
    "fieldname": "due_date",
    "fieldtype": "Date",
    "label": "Due date",
-   "mandatory_depends_on": "eval:doc.type===\"Issue\""
-  },
-  {
-   "fieldname": "type",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "Type",
-   "options": "Issue\nReturn",
-   "reqd": 1
+   "mandatory_depends_on": "eval:doc.type===\"Issued\""
   },
   {
    "fieldname": "remarks",
@@ -61,11 +53,73 @@
    "fieldname": "dont_send_reminder_if_due_date_is_exceeded",
    "fieldtype": "Check",
    "label": "Dont Send Reminder IF Due Date Is Exceeded"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Library Transaction",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "transaction_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "Issued\nReturned\nReissued",
+   "reqd": 1
+  },
+  {
+   "fieldname": "transaction_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "default": "0",
+   "fieldname": "reissued",
+   "fieldtype": "Check",
+   "label": "Reissued",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_eadm",
+   "fieldtype": "Section Break",
+   "label": "Reissue Details"
+  },
+  {
+   "fieldname": "column_break_rlnq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reissued_from",
+   "fieldtype": "Link",
+   "label": "Reissued From",
+   "options": "Library Transaction",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "member.email",
+   "fieldname": "member_email",
+   "fieldtype": "Data",
+   "label": "Member Email",
+   "options": "Email",
+   "read_only": 1
+  },
+  {
+   "fieldname": "return_date",
+   "fieldtype": "Date",
+   "label": "Return Date",
+   "mandatory_depends_on": "eval:doc.transaction_type==\"Return\""
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-06 01:52:42.232576",
+ "modified": "2024-03-07 18:51:42.648108",
  "modified_by": "Administrator",
  "module": "Library",
  "name": "Library Transaction",
