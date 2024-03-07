@@ -40,6 +40,7 @@
   {
    "fieldname": "due_date",
    "fieldtype": "Date",
+   "in_list_view": 1,
    "label": "Due date",
    "mandatory_depends_on": "eval:doc.type===\"Issued\""
   },
@@ -119,7 +120,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-07 18:51:42.648108",
+ "modified": "2024-03-07 22:03:32.390670",
  "modified_by": "Administrator",
  "module": "Library",
  "name": "Library Transaction",
