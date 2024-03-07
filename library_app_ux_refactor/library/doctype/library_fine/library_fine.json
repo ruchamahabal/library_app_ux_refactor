@@ -16,20 +16,27 @@
    "fieldname": "member",
    "fieldtype": "Link",
    "label": "Member",
-   "options": "Library Member"
+   "options": "Library Member",
+   "reqd": 1
   },
   {
    "fieldname": "library_transaction",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Library Transaction",
    "options": "Library Transaction",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "fine_amount",
    "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Fine Amount",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "column_break_yxwf",
@@ -44,7 +51,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-07 18:36:56.148037",
+ "modified": "2024-03-07 19:23:49.612277",
  "modified_by": "Administrator",
  "module": "Library",
  "name": "Library Fine",
@@ -65,5 +72,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "member"
 }

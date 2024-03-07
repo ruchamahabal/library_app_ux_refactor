@@ -3,28 +3,5 @@
 
 frappe.ui.form.on("Library Member", {
 	refresh(frm) {
-		frm.trigger("add_custom_buttons");
-	},
-
-	add_custom_buttons(frm) {
-		frm.add_custom_button(
-			__("Membership"),
-			() => {
-				frappe.new_doc("Library Membership", {
-					member: frm.doc.name,
-				});
-			},
-			__("Create")
-		);
-
-		frm.add_custom_button(
-			__("Transaction"),
-			() => {
-				frappe.new_doc("Library Transaction", {
-					member: frm.doc.name,
-				});
-			},
-			__("Create")
-		);
 	},
 });

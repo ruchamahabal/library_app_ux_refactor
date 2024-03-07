@@ -87,7 +87,6 @@ class LibraryTransaction(Document):
 			frappe.throw(_("No fine applicable"))
 
 		overdue_fine = frappe.db.get_single_value("Library Settings", "overdue_fine")
-
 		if not overdue_fine:
 			frappe.throw(
 				_("Please set the {0} in {1}").format(

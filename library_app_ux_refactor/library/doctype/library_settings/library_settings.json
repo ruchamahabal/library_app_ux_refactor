@@ -5,7 +5,6 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "renewal_window_length",
   "book_limit",
   "overdue_fine"
  ],
@@ -16,11 +15,6 @@
    "label": "Book Limit"
   },
   {
-   "fieldname": "renewal_window_length",
-   "fieldtype": "Int",
-   "label": "Renewal Window Length"
-  },
-  {
    "fieldname": "overdue_fine",
    "fieldtype": "Currency",
    "label": "Overdue Fine"
@@ -29,7 +23,7 @@
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2024-03-07 18:48:35.379131",
+ "modified": "2024-03-07 19:21:31.797706",
  "modified_by": "Administrator",
  "module": "Library",
  "name": "Library Settings",
