@@ -16,9 +16,7 @@
   {
    "fieldname": "title",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Title",
-   "reqd": 1
+   "label": "Title"
   },
   {
    "fieldname": "image",
@@ -28,9 +26,7 @@
   {
    "fieldname": "author",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Author",
-   "reqd": 1
+   "label": "Author"
   },
   {
    "fieldname": "publisher",
@@ -54,7 +50,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-06 01:20:41.847360",
+ "modified": "2024-03-06 12:27:14.316124",
  "modified_by": "Administrator",
  "module": "Library",
  "name": "Book",
