@@ -17,7 +17,7 @@ class LibraryTransaction(Document):
 				"to_date": (">=", self.transaction_date),
 			},
 		):
-			frappe.throw(_("No active membership"))
+			frappe.throw(_("No membership"))
 
 	@frappe.whitelist()
 	def reissue_book(self):
