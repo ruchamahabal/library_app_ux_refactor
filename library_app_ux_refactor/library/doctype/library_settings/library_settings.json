@@ -17,13 +17,13 @@
   {
    "fieldname": "overdue_fine",
    "fieldtype": "Currency",
-   "label": "Overdue Fine"
+   "label": "Late Fee"
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2024-03-07 19:21:31.797705",
+ "modified": "2024-03-08 06:46:34.294742",
  "modified_by": "Administrator",
  "module": "Library",
  "name": "Library Settings",
