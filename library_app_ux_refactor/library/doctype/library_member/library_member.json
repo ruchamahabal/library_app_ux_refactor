@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:MEMBER-{####}",
  "creation": "2024-03-06 01:08:24.160147",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -13,25 +14,31 @@
   {
    "fieldname": "member_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Member Name"
   },
   {
    "fieldname": "email",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Email"
   },
   {
    "fieldname": "phone",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Phone"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-07 22:04:25.066943",
+ "modified": "2024-03-08 06:11:36.386905",
  "modified_by": "Administrator",
  "module": "Library",
  "name": "Library Member",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
