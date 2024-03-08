@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:FINE-{####}",
  "creation": "2024-03-07 18:30:45.635648",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -26,7 +27,6 @@
    "in_standard_filter": 1,
    "label": "Library Transaction",
    "options": "Library Transaction",
-   "read_only": 1,
    "reqd": 1
   },
   {
@@ -34,7 +34,6 @@
    "fieldtype": "Currency",
    "in_list_view": 1,
    "label": "Fine Amount",
-   "read_only": 1,
    "reqd": 1
   },
   {
@@ -50,10 +49,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-08 02:12:50.438339",
+ "modified": "2024-03-08 05:37:43.607348",
  "modified_by": "Administrator",
  "module": "Library",
  "name": "Library Fine",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
